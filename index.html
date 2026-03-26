@@ -745,9 +745,9 @@
         const [items, usdcny, nbsIp, csric, safe, vix] = await Promise.all([
           loadJSON('/data/policy/latest.json'),
           loadJSON('/data/fx/latest.json'),
-          loadJSON('/data/shanghai/latest.json'),
-          loadJSON('/data/policy/latest_rrr.json'),
-          loadJSON('/data/fx/latest.json'),
+          loadJSON('/data/shanghai/nbs-ip.json'),
+          loadJSON('/data/policy/csrc-ipo.json'),
+          loadJSON('/data/fx/safe-quota.json'),
           loadJSON('/data/shanghai/latest.json')
         ]);
         
